@@ -50,7 +50,7 @@ Aspiring computer engineer interested in building innovative, impactful solution
   degree: "Bachelor's of Science, Computer Engineering",
   consistent: true,
 )
-- Operating System Fundamentals, Computer Architecture and Assembly, Intro to Machine Learning, Data Structures and Algorithms, Digital Logic Design, Object Oriented Programming, Intro to Circuit Design, Systems and Signals, Malware Defense, Linear Algebra, Discrete Mathematics, Multivariable Calculus, Differential Equations
+- Operating System Fundamentals, Computer Architecture and Assembly Language, Intro to Machine Learning, Data Structures and Algorithms, Digital Logic Design, Object Oriented Programming, Intro to Circuit Design, Systems and Signals, Malware Defense, Linear Algebra, Discrete Mathematics, Multivariable Calculus, Differential Equations
 - Active member of UCLA IEEE and UCLA ACM Cyber
 
 // - Cumulative GPA: 4.0\/4.0 | Dean's List, Harvey S. Mudd Merit Scholarship, National Merit Scholarship
@@ -147,8 +147,8 @@ Aspiring computer engineer interested in building innovative, impactful solution
   url: "www.theopendissent.com",
   dates: "Ongoing",
 )
-- Building a full-stack social media site with HTML/CSS/TypeScript with Google Authentication and a realtime database.
-- Awarded funding via the University of California VOICE Initiative from the National Center for Free Speech.
+- Built a full-stack social media site with HTML/CSS/TypeScript with Google authentication and a realtime database.
+// - Awarded funding via the University of California VOICE Initiative from the National Center for Free Speech.
 
 // - Developing a dynamic back-end with integration with Firebase authentication and a Firebase real-time database.
 // - Building an anonymized full-stack social media site for students with HTML/CSS/JavaScript with a Firebase real-time database and authentication.
@@ -167,7 +167,7 @@ Aspiring computer engineer interested in building innovative, impactful solution
 
 #project(
   // name: "Sleep Apnea Analysis ML Data Pipeline (Caltech Hacktech 2025)",
-  role: "Nea: Machine Learning for Sleep Apnea Diagnosis (Caltech Hacktech 2025)",
+  role: "Nea: Machine Learning for Sleep Apnea Diagnosis (Hacktech 2025 @ Caltech)",
   name: "Team Member",
   dates: "Apr 2025",
 )
@@ -221,6 +221,6 @@ Aspiring computer engineer interested in building innovative, impactful solution
 == Skills
 // - *Expertise*: Software Development | Formal Verification | Automated Theorem Proving | Data Analysis
 - *Expertise*: Software Engineering | Formal Verification | Digital Logic Design | Circuit Design | Data Analysis
-// - *Programming Languages*: C/C++ | Python | R | JavaScript | HTML/CSS | SQL | Java | Bash | Lua | Typst | LaTeX
 // - *Programming Languages*: C/C++ | ReactJS/NodeJS/JavaScript | SQL | Java | HTML/CSS | Python | R | Bash | Lua
-- *Programming Languages*: C/C++ | ReactJS/NodeJS/JavaScript | SQL | Java | HTML/CSS | Python | R | Bash | Lua
+- *Programming Languages*: C/C++ | x86 Assembly | Python | Java | Bash | JavaScript/TypeScript | SQL | Typst
+- *Technologies*: React | Node.js (Express) | Django | PostgreSQL | Vim/Neovim | Git/GitHub | Linux
