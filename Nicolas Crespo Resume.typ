@@ -223,4 +223,4 @@ Aspiring computer engineer interested in building innovative, impactful solution
 - *Expertise*: Software Engineering | Formal Verification | Digital Logic Design | Circuit Design | Data Analysis
 // - *Programming Languages*: C/C++ | ReactJS/NodeJS/JavaScript | SQL | Java | HTML/CSS | Python | R | Bash | Lua
 - *Programming Languages*: C/C++ | x86 Assembly | Python | Java | Bash | JavaScript/TypeScript | SQL | Typst
-- *Technologies*: React | Node.js (Express) | Django | PostgreSQL | Vim/Neovim | Git/GitHub | Linux
+- *Technologies*: React | Node.js (Express) | MongoDB | Oracle SQL | Vim/Neovim | Linux | Git/GitHub
