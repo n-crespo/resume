@@ -146,11 +146,15 @@
 ) = {
   if consistent {
     // edu-constant style (dates top-right, location bottom-right)
-    generic-two-by-two(
-      top-left: strong(institution),
-      top-right: dates,
-      bottom-left: emph(degree),
-      bottom-right: emph(location),
+    generic-one-by-two(
+      left: strong(institution) + ", " + emph(degree),
+      right: dates,
+      // bottom-left: emph(degree),
+      // bottom-right: emph(location),
+      // top-left: strong(institution) + ", " + emph(degree),
+      // top-right: dates,
+      // bottom-left: emph(degree),
+      // bottom-right: emph(location),
     )
   } else {
     // original edu style (location top-right, dates bottom-right)
@@ -275,8 +279,8 @@ Aspiring computer engineer interested in building innovative, impactful solution
 #edu(
   institution: "University of California, Los Angeles",
   // location: "Los Angeles, California",
-  dates: dates-helper(start-date: "Sept 2024", end-date: "June 2028"),
-  degree: "Bachelor's of Science, Computer Engineering",
+  dates: "Expected March 2028",
+  degree: "B.S. in Computer Engineering",
   consistent: true,
 )
 - Operating System Fundamentals, Computer Architecture and Assembly Language, Intro to Machine Learning, Data Structures and Algorithms, Digital Logic Design, Object Oriented Programming, Intro to Circuit Design, Systems and Signals, Malware Defense, Linear Algebra, Discrete Mathematics, Multivariable Calculus, Differential Equations
@@ -376,8 +380,9 @@ Aspiring computer engineer interested in building innovative, impactful solution
   url: "TheOpenDissent.com",
   dates: "Ongoing",
 )
-- Built a full-stack social media site with HTML/CSS/TypeScript with Google authentication and a realtime database.
-// - Awarded funding via the University of California VOICE Initiative from the National Center for Free Speech.
+- Building a serverless full-stack social platform using React, TypeScript, and Firebase Cloud Functions (Node.js).
+- Created an CI/CD pipeline using GitHub Actions and Vercel to automate production deployments.
+- Secured funding through the VOICE Initiative from the UC National Center for Free Speech and Civic Engagement.
 
 // - Developing a dynamic back-end with integration with Firebase authentication and a Firebase real-time database.
 // - Building an anonymized full-stack social media site for students with HTML/CSS/JavaScript with a Firebase real-time database and authentication.
@@ -387,12 +392,16 @@ Aspiring computer engineer interested in building innovative, impactful solution
   name: "Developer",
   dates: "May 2025",
 )
-- Optimized image convolution, grayscaling and mean pixel value algorithms with multi-threading and instruction level parallelism using OpenMP pragmas in C, resulting in a 12-15x speed up compared to sequential algorithms.
+// - Optimized image convolution, greyscaling and mean pixel value algorithms with multi-threading and instruction level parallelism using OpenMP pragmas in C, resulting in a 12-15x speed up compared to sequential algorithms.
+// - Optimized Gaussian convolution, pixel averaging, and greyscale algorithms in C to exploit instruction-level parallelism.
+- Optimized Gaussian convolution and greyscaling algorithms in C to exploit cache locality and instruction-level parallelism.
+- Achieved a 12-15x speedup over sequential baselines with multi-threading using OpenMP pragmas.
 
+// smart memory access patterns
 // calculating average pixel value across all pixels in an image
 // program optimization, exploiting instruction level parallelism, cache friendly code, OpenMP pragmas,
-// converting an image into grayscale, recording max/min grayscale values
-// applying a convolution kernel for gassian blur and generating a convoluted image
+// converting an image into greyscale, recording max/min greyscale values
+// applying a convolution kernel for Gaussian blur and generating a convoluted image
 
 #project(
   // name: "Sleep Apnea Analysis ML Data Pipeline (Caltech Hacktech 2025)",
@@ -402,12 +411,12 @@ Aspiring computer engineer interested in building innovative, impactful solution
 )
 - Created a data preparation pipeline in Python for cleaning and introducing deliberate noise into ML training data.
 
-#project(
-  role: "Cyber Kill Chain Implementation in a Modern Malware Toolkit",
-  name: "Developer and Team Member",
-  dates: "March 2025",
-)
-- Integrated the Shellshock exploit, a TCP/UDP port scanner, and a self-spawning persistence service in a malware package.
+// #project(
+//   role: "Cyber Kill Chain Implementation in a Modern Malware Toolkit",
+//   name: "Developer and Team Member",
+//   dates: "March 2025",
+// )
+// - Integrated the Shellshock exploit, a TCP/UDP port scanner, and a self-spawning persistence service in a malware package.
 
 // - implemented shellshock exploit
 // - wrote script to inject obfuscated alias hijacks and unkillable system service that repeatedly spawns malware to allow malware to persistent, complete with kill switch functionality (part of the cyber kill chain)
