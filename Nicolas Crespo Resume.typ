@@ -185,21 +185,21 @@
   url: "",
   dates: "",
 ) = {
+  // pre-format the link if a url is provided
+  let dest = if url != "" { link("https://" + url)[#url] }
+
+  // determine content placement:
+  // if dates exist, the url is appended to the name (left).
+  // if dates are missing, the url is shown on the right.
+  let left-suffix = if dates != "" and url != "" { [ (#dest)] }
+  let right-content = if dates == "" and url != "" { dest } else { dates }
+
+  // construct title based on if role exists
+  let title = if role != "" { [*#role*, #name] } else { [*#name*] }
+
   generic-one-by-two(
-    left: {
-      if role == "" {
-        [*#name* #if url != "" and dates != "" [ (#link("https://" + url)[#url])]]
-      } else {
-        [*#role*, #name #if url != "" and dates != "" [ (#link("https://" + url)[#url])]]
-      }
-    },
-    right: {
-      if dates == "" and url != "" {
-        link("https://" + url)[#url]
-      } else {
-        dates
-      }
-    },
+    left: { title + left-suffix },
+    right: right-content,
   )
 }
 #let certificates(
@@ -283,7 +283,7 @@ Aspiring computer engineer interested in building innovative, impactful solution
   degree: "B.S. in Computer Engineering",
   consistent: true,
 )
-- Operating System Fundamentals, Computer Architecture and Assembly Language, Intro to Machine Learning, Data Structures and Algorithms, Digital Logic Design, Object Oriented Programming, Intro to Circuit Design, Systems and Signals, Malware Defense, Linear Algebra, Discrete Mathematics, Multivariable Calculus, Differential Equations
+- Operating Systems, Computer Architecture and Assembly Language, Machine Learning, Data Structures and Algorithms, Object Oriented Programming, Digital Logic Design, Systems and Signals, Discrete Mathematics, Differential Equations
 - Active member of UCLA IEEE and UCLA ACM Cyber
 
 // - Cumulative GPA: 4.0\/4.0 | Dean's List, Harvey S. Mudd Merit Scholarship, National Merit Scholarship
@@ -388,6 +388,17 @@ Aspiring computer engineer interested in building innovative, impactful solution
 // - Building an anonymized full-stack social media site for students with HTML/CSS/JavaScript with a Firebase real-time database and authentication.
 
 #project(
+  role: "Vulnex",
+  name: "Team Lead and Backend Developer",
+  dates: dates-helper(start-date: "Sept 2025", end-date: "Dec 2025"),
+  url: "https://n-crespo.github.io/vulnex/",
+)
+// - Optimized parsing 300k+ NVD CVE records, reducing fetching time by 96% (1hr to 2min) and storage requirements by 97% (7GB to 200MB).
+- Optimized parsing of 300k+ CVE records, reducing fetching time by 96% (1hr to 2min) and storage requirements by 97%.
+- Created an Express/MongoDB REST API, implementing secure JWT auth middleware and bulk CRUD operations.
+- Built GitHub Actions CI/CD pipeline for automated deployment with 30+ E2E and integration tests (Mocha/Playwright).
+
+#project(
   role: "High-Performance Image Manipulation Algorithms in C",
   name: "Developer",
   dates: "May 2025",
@@ -403,13 +414,13 @@ Aspiring computer engineer interested in building innovative, impactful solution
 // converting an image into greyscale, recording max/min greyscale values
 // applying a convolution kernel for Gaussian blur and generating a convoluted image
 
-#project(
-  // name: "Sleep Apnea Analysis ML Data Pipeline (Caltech Hacktech 2025)",
-  role: "Nea: Machine Learning for Sleep Apnea Diagnosis (Hacktech 2025 @ Caltech)",
-  name: "Team Member",
-  dates: "Apr 2025",
-)
-- Created a data preparation pipeline in Python for cleaning and introducing deliberate noise into ML training data.
+// #project(
+//   // name: "Sleep Apnea Analysis ML Data Pipeline (Caltech Hacktech 2025)",
+//   role: "Nea: Machine Learning for Sleep Apnea Diagnosis (Hacktech 2025 @ Caltech)",
+//   name: "Team Member",
+//   dates: "Apr 2025",
+// )
+// - Created a data preparation pipeline in Python for cleaning and introducing deliberate noise into ML training data.
 
 // #project(
 //   role: "Cyber Kill Chain Implementation in a Modern Malware Toolkit",
@@ -460,5 +471,5 @@ Aspiring computer engineer interested in building innovative, impactful solution
 // - *Expertise*: Software Development | Formal Verification | Automated Theorem Proving | Data Analysis
 - *Expertise*: Software Engineering | Formal Verification | Digital Logic Design | Circuit Design | Data Analysis
 // - *Programming Languages*: C/C++ | ReactJS/NodeJS/JavaScript | SQL | Java | HTML/CSS | Python | R | Bash | Lua
-- *Programming Languages*: C/C++ | x86 Assembly/MIPS | Python | Java | Bash | JavaScript/TypeScript | SQL | Typst
-- *Technologies*: React | NodeJS | MongoDB | Oracle SQL | Vim/Neovim | Linux | Git/GitHub
+- *Programming Languages*: C/C++ | x86 Assembly/MIPS | Python | Java | JavaScript/TypeScript | SQL | Bash | Typst
+- *Technologies*: React | NodeJS | MongoDB | Playwright | ExpressJS | Vim/Neovim | Linux | Git/GitHub
