@@ -377,7 +377,7 @@ Aspiring computer engineer interested in building innovative, impactful solution
 #project(
   role: "The Open Dissent",
   name: "Co-Founder and Software Engineer",
-  url: "TheOpenDissent.com",
+  url: "github.com/n-crespo/theopendissent",
   dates: "Ongoing",
 )
 - Building a serverless full-stack social platform using React, TypeScript, and Firebase Cloud Functions (Node.js).
@@ -388,10 +388,10 @@ Aspiring computer engineer interested in building innovative, impactful solution
 // - Building an anonymized full-stack social media site for students with HTML/CSS/JavaScript with a Firebase real-time database and authentication.
 
 #project(
-  role: "Vulnex",
+  role: "VulnEx",
   name: "Team Lead and Backend Developer",
   dates: dates-helper(start-date: "Sept 2025", end-date: "Dec 2025"),
-  url: "https://n-crespo.github.io/vulnex/",
+  url: "github.com/n-crespo/vulnex",
 )
 // - Optimized parsing 300k+ NVD CVE records, reducing fetching time by 96% (1hr to 2min) and storage requirements by 97% (7GB to 200MB).
 - Optimized parsing of 300k+ CVE records, reducing fetching time by 96% (1hr to 2min) and storage requirements by 97%.
