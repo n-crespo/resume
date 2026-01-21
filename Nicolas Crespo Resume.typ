@@ -351,7 +351,7 @@ Aspiring computer engineer interested in building innovative, impactful solution
   name: "IEEE",
 )\
 2024 AIAA DATC/IEEE Digital Avionics Systems Conference
-(#link("https://ieeexplore.ieee.org/document/10748654")[https://ieeexplore.ieee.org/document/10748654])
+(#link("https://ieeexplore.ieee.org/document/10748654")[ieeexplore.ieee.org/document/10748654])
 
 #project(
   role: "A Formal Verification Framework for Runtime Assurance",
@@ -359,7 +359,7 @@ Aspiring computer engineer interested in building innovative, impactful solution
   name: "Springer",
 )\
 2024 NASA Formal Methods Conference: 16th International Symposium
-(#link("https://doi.org/10.1007/978-3-031-60698-4_19")[https://doi.org/10.1007/978-3-031-60698-4_19])
+(#link("https://doi.org/10.1007/978-3-031-60698-4_19")[doi.org/10.1007/978-3-031-60698-4_19])
 
 // Slagel, J. T., White, L. M., Dutle, A., Muñoz, C. A., & Crespo, N. A
 // Verification Framework for Runtime Assurance of Autonomous UAS. In 2024 AIAA
